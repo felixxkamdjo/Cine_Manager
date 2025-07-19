@@ -1,0 +1,260 @@
+/* a css flile form sales html file */
+
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --principal-color : #001B48;
+    --primary-color: #02457A;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --latest-color: #d6e8ee;
+}
+
+body {
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+    /* vertical-align: middle; */
+    border-radius: 15px;
+    margin: 0;
+    background-color: var(--latest-color);
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
+}
+
+.main {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 400px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    gap: 20px;
+    border-radius: 10px;
+    /* display: none; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+thead {
+    margin-bottom: 10px;
+    background-color: var(--latest-color);
+    border-radius: 10px;
+}
+
+th {
+    padding: 15px;
+}
+
+tr {
+    padding: 30px;
+    text-align: left;
+    margin: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* class */
+.container {
+    height: auto;
+    width: 90%;
+    /* align-content: center; */
+    padding: 30px 0px;
+}
+
+
+.contents {
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 80%;
+    /* height: auto; */
+}
+
+.contents h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #001B48;
+    font-weight: bold;
+    border-bottom: 1px solid var(--principal-color);
+    padding-bottom: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* display: none; */
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 36px;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.text svg {
+    height: 38px;
+    width: 38px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .icon svg {
+    stroke: #018ABE;
+    fill: var(--secondary-color);
+    height: 26px;
+    width: 26px;
+} */
+
+.head-blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.block {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+    width: 22%;
+    background-color: var(--latest-color);
+}
+
+#customers {
+    background-color: #fff2dc;
+}
+
+#sales {
+    background-color: #d8fae7;
+}
+
+#purchases {
+    background-color: #ffeef1;
+}
+
+#events {
+    width: 25%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#events svg {
+    stroke: var(--secondary-color);
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.block-content svg {
+    width: 32px;
+    height: 32px;
+    stroke: var(--primary-color);
+}
+
+.block-content span {
+    display: block;
+}
+
+.block-number {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.svg-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+#delete:hover {
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#edit:hover {
+    color: green;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.actions .size-7:hover {
+    stroke: red;
+}
+
+.log-out {
+    background-color: rgba(209, 32, 32, 0.534);
+    &:hover {
+        background-color: red;
+        transition: 0.3s;
+    }
+}
+
+.add-sale {
+    /* background-color: #9BABAB; */
+    background-color: var(--primary-color);
+    &:hover {
+        background-color: blue;
+    }
+}
