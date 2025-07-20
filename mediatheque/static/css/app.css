@@ -27,7 +27,7 @@ body {
     /* vertical-align: middle; */
     border-radius: 15px;
     margin: 0;
-    background-color: var(--latest-color);
+    /* background-color: var(--latest-color); */
 }
 
 svg {
