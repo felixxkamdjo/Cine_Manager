@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#</title>
+
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="stylesheet" href="../static/css/new_movie_form.css">
+
+    <script type="module" src="../static/js/popup.js" defer></script>
+</head>
+<body>
+    <div class="content__main-content">
+        <div class="main-content__head-element">
+            <button class="head-element__log-out">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                </svg>
+                <span>Log-out</span>
+            </button>
+            <button class="head-element__add-movie">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+                <span>Add Movie</span>
+            </button>
+        </div>
+        <div class="main-content__top-element">
+            <h4>Recently added</h4>
+            <div class="top-element__image-wrapper">
+                <div class="image-wrapper__left-corner">
+                    <div class="left-corner__head-block">
+                        <h2>Sinners</h2>
+                        <div class="head-block__more-info">
+                            <div>2025</div>
+                            <div>Action</div>
+                            <div>01 Episode</div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem labore commodi ipsam aperiam quaerat expedita quod non consequuntur vel, impedit minima.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-wrapper__image">
+                    <img src="../static/img/sinners.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-content__main-element">
+            <h4>All Movies</h4>
+            <div class="main-element__element-wrapper">
+                <div class="element-wrapper__card">
+                    <img src="../static/img/sinners.jpeg" alt="">
+                    <div class="card__infos">
+                        <h4>Sinners</h4>
+                        <div class="card__infos-more">
+                            <div class="infos-more__infos">
+                                <div>2025 -</div>
+                                <div>Action -</div>
+                                <div>01 Episode</div>
+                            </div>
+                            <div class="infos-more__icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for the new add -->
+    <div class="popup-background">
+        <div class="popup-background__add-movie">
+            <h1>Add Movie</h1>
+            <form action="" method="post">
+                <div class="add-movie__head">
+                    <label for="name">Name :</label>
+                    <input type="text" placeholder="Ex: Indomptables">
+                </div>
+                <div class="add-movie__middle">
+                    <div class="middle__last-element">
+                        <label for="director">Director :</label>
+                        <input type="text" placeholder="Thomas Ngijol">
+                    </div>
+                    <div class="middle__first-element">
+                        <label for="genre">Genre :</label>
+                        <input type="text" placeholder="Fiction/Polar">
+                    </div>
+                </div>
+                <div class="add-movie__bottom">
+                    <div class="bottom__first-element">
+                        <label for="genre">Year :</label>
+                        <input type="text" placeholder="2025">
+                    </div>
+                    <div class="bottom__last-element">
+                        <label for="director">Rank :</label>
+                        <input type="text" placeholder="3.5">
+                    </div>
+                </div>
+                <div class="add-movie__last">
+                    <label for="synopsis">Synopsis</label>
+                    <textarea name="" id="" 
+                        placeholder="À Yaoundé, le commissaire Billong enquête sur le meurtre d'un officier de police. Dans la rue comme au sein de sa famille, il peine à maintenir l'ordre. Homme de principe et de tradition, il approche du point de rupture."
+                        ></textarea>
+                </div>
+                <div class="form__buttons">
+                    <input type="reset" value="Discard" class="head-element__log-out" id="discard">
+                    <input type="submit" value="Save" class="head-element__add-movie">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
