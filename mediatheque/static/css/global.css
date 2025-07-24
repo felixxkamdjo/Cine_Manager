@@ -7,16 +7,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --principal-color : #18191e;
+    --primary-color: #d71a22;
+    --secondary-color: white;
+    --tertiary-color: #141519;
+    --latest-color: #2e3337;
+}
 
 body {
     width: 100%;
+    color: var(--secondary-color);
 }
 
-
-img {
-    border-radius: 50%;
-    height: 32px;
-    width: 32px;
+p {
+    margin-top: 15px;
 }
 
 svg {
@@ -24,11 +29,16 @@ svg {
     width: 16px;
 }
 
-span {
-    opacity: 0.7;
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
-input {
+span {
+    display: block;
+}
+
+/* input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--hover-color);
@@ -36,20 +46,19 @@ input {
     &:hover {
         transition: 0.3s;
     }
-}
+} */
 
 button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    padding: 12px;
+    padding: 8px;
     border-radius: 5px;
     border: 1px solid var(--hover-color);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 14px;
-    /* height: 44px; */
 
     &:hover {
         transition: 0.3s;

@@ -1,28 +1,31 @@
-// a popup for new movie
+// Popup module for adding a new movie
 
+// Récupérer une seule fois le popup dans le DOM
+const popupBackground = document.querySelector(".popup-background");
 
-// display the popup
+// Affiche le popup
 export const displayPopup = () => {
-    let showPopup = document.querySelector(".popup_background");
-    showPopup.classList.add("active");
+    if (popupBackground) {
+        popupBackground.classList.add("active");
+    }
 }
 
-// hidden the popup 
+// Cache le popup
 export const hidePopup = () => {
-    let maskPopup = document.querySelector(".popup_background");
-    maskPopup.classList.remove("active");
+    if (popupBackground) {
+        popupBackground.classList.remove("active");
+    }
 }
 
-// function addEventListenerPopup() {
-    let btnShare = document.querySelector("#button-new");
-    let maskPopupReset = document.querySelector("#b-reset");
-    // let closePopup = document.querySelector(".popupBackground")
+// Sélecteurs des éléments déclencheurs
+const btnShare = document.querySelector(".head-element__add-movie");
+const discardBtn = document.querySelector("#discard");
 
-    btnShare.addEventListener("click", () => {
-        displayPopup();
-    })
+// Gestion des clics
+if (btnShare) {
+    btnShare.addEventListener("click", displayPopup);
+}
 
-    maskPopupReset.addEventListener("click", () => {
-        hidePopup();
-    })
-// }
+if (discardBtn) {
+    discardBtn.addEventListener("click", hidePopup);
+}
